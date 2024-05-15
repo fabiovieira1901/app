@@ -1,0 +1,98 @@
+{
+  "expo": {
+    "name": "Milene Martins Fitness",
+    "slug": "ptmilenemartinsfitness",
+    "scheme": "ptmilenemartinsfitness",
+    "extra": {
+      "url": "",
+      "devUrl": "",
+      "chatUrl": "",
+      "ptId": "",
+      "adminEmail": "",
+      "adminPassword": "",
+      "eas": {
+        "projectId": "c3d1f6fe-e629-4f2e-a17c-728f7206b23d"
+      }
+    },
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover"
+    },
+    "version": "5.0.0",
+    "orientation": "portrait",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.ptadmin.ptmilenemartinsfitness",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 13,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "ptmilenemartinsfitness"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.ptadmin.ptmilenemartinsfitness",
+      "infoPlist": {
+        "NSCameraUsageDescription": "É necessário acesso à câmara para que possas enviar fotos da tua evolução corporal ao PT, assim como atualizar a tua foto de perfil.",
+        "NSPhotoLibraryUsageDescription": "É necessário acesso à tua galeria para que possas enviar fotos da tua evolução corporal ao PT, assim como atualizar a tua foto de perfil.",
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      },
+      "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
+          }
+        ]
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notifications_icon.png"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          }
+        }
+      ]
+    ],
+    "notification": {
+      "icon": "./assets/images/notifications_icon.png"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "owner": "fabiovieira1901",
+    "updates": {
+      "url": "https://u.expo.dev/c3d1f6fe-e629-4f2e-a17c-728f7206b23d"
+    }
+  }
+}
